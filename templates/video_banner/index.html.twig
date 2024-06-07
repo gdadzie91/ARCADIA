@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello VideoBannerController!{% endblock %}
+
+{% block body %}
+
+
+
+    <div class="video-banner">
+        <video autoplay muted loop>
+            <source src="{{ asset('videos/panda.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <div>
+                <h1 class="text-warning">Bienvenue au Zoo Arcadia</h1>
+                <p>Découvrez la beauté de la nature et la diversité de la faune</p>
+                <a href="{{ path('app_services') }}" class="btn btn-video shadow">Explorez nos services</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

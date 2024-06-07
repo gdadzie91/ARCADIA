@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AvisController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 1980px; width: 100%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <div class="container mt-5">
+        <h2 class="text-center">Avis Clients</h2>
+        <div class="row justify-content-center">
+            <div class="card mb-3 col-4">
+                <div class="card-body text-center">
+                    <img src="https://via.placeholder.com/50" alt="Avatar" class="rounded-circle">
+                    <h5 class="card-title mt-3 mb-0">John Doe</h5>
+                    <p class="card-text text-muted">5 jours</p>
+                    <div class="star-rating text-warning">★★★★☆</div>
+                    <p class="card-text mt-3">Un zoo magnifique avec une grande variété d'animaux. C'était une expérience inoubliable pour toute la famille !</p>
+                </div>
+            </div>
+            <div class="card mb-3 col-4">
+                <div class="card-body text-center">
+                    <img src="https://via.placeholder.com/50" alt="Avatar" class="rounded-circle">
+                    <h5 class="card-title mt-3 mb-0">Jane Smith</h5>
+                    <p class="card-text text-muted">2 semaines</p>
+                    <div class="star-rating text-warning">★★★★★</div>
+                    <p class="card-text mt-3">J'ai adoré ma visite au Zoo Arcadia ! Les enclos étaient propres et les animaux semblaient en bonne santé.</p>
+                </div>
+            </div>
+            <div class="card mb-3 col-4">
+                <div class="card-body text-center">
+                    <img src="https://via.placeholder.com/50" alt="Avatar" class="rounded-circle">
+                    <h5 class="card-title mt-3 mb-0">Alice Johnson</h5>
+                    <p class="card-text text-muted">3 jours</p>
+                    <div class="star-rating text-warning">★★★★☆</div>
+                    <p class="card-text mt-3">Une journée fantastique au zoo ! Les spectacles étaient incroyables et les enfants ont adoré.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center text-dark">Donnez Votre Avis</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                    </div>
+                    <div class="mb-3">
+                        <label for="review" class="form-label">Votre Avis</label>
+                        <textarea class="form-control" id="review" rows="3" placeholder="Votre avis"></textarea>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">Note</label>
+                        <div class="star-rating">
+                            <input type="radio" id="5-stars" name="rating" value="5">
+                            <label for="5-stars">&#9733;</label>
+                            <input type="radio" id="4-stars" name="rating" value="4">
+                            <label for="4-stars">&#9733;</label>
+                            <input type="radio" id="3-stars" name="rating" value="3">
+                            <label for="3-stars">&#9733;</label>
+                            <input type="radio" id="2-stars" name="rating" value="2">
+                            <label for="2-stars">&#9733;</label>
+                            <input type="radio" id="1-star" name="rating" value="1">
+                            <label for="1-star">&#9733;</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

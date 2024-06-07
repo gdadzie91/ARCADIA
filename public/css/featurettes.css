@@ -1,0 +1,11 @@
+.section-featurettes{background-color: #1a3934; }
+.section-featurettes .featurette-heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.section-featurettes .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.img-box{border-radius: 30% 70% 70% 30% / 30% 58% 42% 70%;width: 500px; height: 500px ;}

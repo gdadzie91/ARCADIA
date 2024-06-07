@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Arcadia-zoo.fr{% endblock %}
+{% block stylesheets %}
+    <link href="{{ asset('css/style1.css') }}" rel="stylesheet">
+
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+
+{% block body %}
+        {% include 'menu_main/index.html.twig' %}
+        {% include 'video_banner/index.html.twig' %}
+        {% include 'habitats/index.html.twig' %}
+        {% include 'services/index.html.twig' %}
+        {% include 'avis/index.html.twig' %}
+        {% include 'contact_horaires/index.html.twig' %}
+        {% include 'footer/index.html.twig' %}
+
+
+{% endblock %}

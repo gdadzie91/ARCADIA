@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ServicesController!{% endblock %}
+
+{% block body %}
+  {% include 'menu_main/index.html.twig' %}
+
+<div class="container-fluid marketing">
+  <div class="row text-center p-5 text-light">
+    <h2 class="mt-5 mb-5">Retrouvez toutes nos activités et nos services du moment!</h2>
+    <div class="col-lg-4">
+      <img src="{{ asset('images/jpg/restauration.jpg') }}" class="bd-placeholder-img rounded-circle" width="400px" height="400px" alt="Restauration" />
+      <h2>Restauration</h2>
+      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+      <p><a class="btn btn-warning" href="#">View details &raquo;</a></p>
+    </div>
+    <div class="col-lg-4">
+      <img src="{{ asset('images/jpg/visite-guide.jpg') }}" class="bd-placeholder-img rounded-circle" width="400px" height="400px" alt="Visite guidée" />
+      <h2>Visite guidée</h2>
+      <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+      <p><a class="btn btn-warning" href="#">View details &raquo;</a></p>
+    </div>
+    <div class="col-lg-4">
+      <img src="{{ asset('images/jpg/train.jpg') }}" class="bd-placeholder-img rounded-circle" width="400px" height="400px" alt="Train explorateur" />
+      <h2>Train explorateur</h2>
+      <p>And lastly this, the third column of representative placeholder content.</p>
+      <p><a class="btn btn-warning" href="#">View details &raquo;</a></p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

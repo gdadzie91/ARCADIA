@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RestaurationController!{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('css/restauration.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/banniere-restauration.css') }}" rel="stylesheet">
+
+{% endblock %}
+
+{% block body %}
+    <style> .banner-image{background: url("{{ asset('images/restauration/restauration-arcadia.jpg') }}") no-repeat center center;}</style>
+
+    {% include 'menu_main/index.html.twig' %}
+    {% include 'banniere_restauration/index.html.twig' %}
+
+
+    <!-- Main Content -->
+    <div class="container main-restauration   py-5">
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <img src="{{ asset('images/restauration/restauration-arcadia.jpg') }}" alt="Restaurant" class="service-image w-100">
+            </div>
+            <div class="col-md-6">
+                <h3 class="h3">Notre Restaurant</h3>
+                <p>Notre restaurant propose une variété de plats délicieux, des collations légères aux repas complets. Que vous soyez végétarien, végan, ou amateur de viande, nous avons quelque chose pour satisfaire vos goûts. Nos chefs utilisent des ingrédients frais et locaux pour créer des plats savoureux et sains.</p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-6 order-md-2">
+                <img src="{{ asset('images/restauration/cafe-arcadia.jpg') }}" alt="Café" class="service-image w-100">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h3>Le Café du Zoo</h3>
+                <p>Pour une pause détente, rendez-vous à notre café. Dégustez un café fraîchement moulu, un thé parfumé, ou un jus de fruits frais accompagné de pâtisseries maison. Notre café est l'endroit idéal pour se reposer et profiter de la vue sur le zoo.</p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <img src="{{ asset('images/restauration/snack-bar-arcadia-1.jpg') }}" alt="Snack Bar" class="service-image w-75 h-75">
+            </div>
+            <div class="col-md-6">
+                <h3>Le Snack Bar</h3>
+                <p>Si vous avez besoin d'une collation rapide, notre snack bar offre une sélection de sandwichs, salades, et snacks pour emporter. Idéal pour une pause rapide avant de continuer votre exploration du zoo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>À propos de nous</h5>
+                    <p>Le Zoo Arcadia est dédié à la conservation de la faune et à fournir des expériences éducatives pour tous nos visiteurs. Apprenez-en davantage sur notre mission et le travail que nous faisons pour protéger les habitats des animaux.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liens Rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{{ path('app_home') }}" class="text-white">Accueil</a></li>
+
+                        <li><a href="{{ path('app_services') }}" class="text-white">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contactez-nous</h5>
+                    <address>
+                        1234 Avenue Arcadia<br>
+                        Ville, État, 56789<br>
+                        Email : <a href="mailto:info@zooarcadia.com" class="text-white">info@zooarcadia.com</a><br>
+                        Téléphone : <a href="tel:+1234567890" class="text-white">+1 234 567 890</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary text-center py-3">
+            <p class="mb-0">&copy; 2024 Zoo Arcadia. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</div>
+{% endblock %}

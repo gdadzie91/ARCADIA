@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FooterController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 1980px; width: 100%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <footer class="footer mt-auto py-3 bg-black text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>À propos de nous</h5>
+                    <p>Le Zoo Arcadia est dédié à la conservation de la faune et à fournir des expériences éducatives pour tous nos visiteurs.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liens Rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Accueil</a></li>
+                        <li><a href="#" class="text-white">À propos</a></li>
+                        <li><a href="#" class="text-white">Services</a></li>
+                        <li><a href="#" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contactez-nous</h5>
+                    <address>
+                        1234 Avenue Arcadia<br>
+                        Ville, État, 56789<br>
+                        Email : <a href="mailto:info@zooarcadia.com" class="text-white">info@zooarcadia.com</a><br>
+                        Téléphone : <a href="tel:+1234567890" class="text-white">+1 234 567 890</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            <p class="mb-0">&copy; 2024 Zoo Arcadia. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</div>
+{% endblock %}

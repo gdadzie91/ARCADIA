@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+{% block stylesheets %}
+    <link href="{{ asset('css/style1.css') }}" rel="stylesheet">
+
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+
+{% block body %}
+    <style>
+        body {
+            background-image: url('{{ asset('images/background.jpg') }}'); /* Chemin de l'image */
+            background-size: cover; /* Pour couvrir tout l'écran */
+            background-repeat: no-repeat; /* Pour ne pas répéter l'image */
+
+        }
+    </style>
+
+   <main class="container d-flex justify-content-center align-items-center">
+
+       <!-- PRÉSENTATION DU ZOO ARCADIA -->
+       <div id="section-box-1-presentation" class="row section-1-presentation">
+           <div id="img-box-1" class="col-lg-6">
+               <img id="img-1-presentation" class="img-presentation" src="{{ asset('images/zoo.jpeg') }}" alt="Le zoo Acardia">
+           </div>
+
+           <div id="txt-box-1"  class="col-lg-6">
+               <h2 id="titre-h2-presentation" class="titre-h2">Bienvenue à Arcadia!</h2>
+               <p id="paragraph-1-presentation" class="paragraph">Nous sommes ravis de vous accueillir au Zoo Arcadia ! Préparez-vous à vivre une expérience inoubliable au cœur de la nature.
+                   Que vous soyez ici pour admirer les majestueux éléphants, observer les gracieux zèbres, ou en apprendre davantage sur les
+                   initiatives de conservation, nous avons quelque chose pour chacun de vous. Notre équipe dévouée est là pour rendre votre visite agréable,
+                   éducative et mémorable. Profitez pleinement de votre journée parmi nos incroyables résidents animaliers et laissez-vous émerveiller par
+                   la beauté et la diversité de la faune mondiale. Merci de soutenir notre mission de protection et de préservation des espèces en danger. Bonne visite !
+               </p>
+
+
+           </div>
+       </div>
+
+       <!-- VUE GLOBALE DES SERVICES -->
+       <div id="section-box-2-service" class="row section-2-services">
+
+           <div id="img-box-2" class="col-lg-4">
+               <img id="img-service-2" class="img-services" src="{{ asset('images/restauration.jpg') }}" alt="La restauration chez Arcadia">
+               <h3>Restauration Arcadia</h3>
+           </div>
+
+           <div id="img-box-3"  class="col-lg-4">
+               <img id="img-service-3" class="img-services" src="{{ asset('images/visite-guide.jpg') }}" alt="La visite guidé du zoo Arcadia">
+               <h3>La visite guidée</h3>
+           </div>
+
+           <div id="img-4"  class="col-lg-4">
+               <img id="img-service-4" class="img-services" src="{{ asset('images/train.jpg') }}" alt="Le train explorateur du zoo Arcadia">
+               <h3>Le train explorateur</h3>
+           </div>
+
+       </div>
+
+       <!-- VUE GLOBALE DES HABITATS -->
+       <div class="row section-3">
+           <div id="img-3" class="col-lg-6">
+
+           </div>
+
+           <div id="txt-3"  class="col-lg-6">
+
+           </div>
+       </div>
+
+       <!-- AVIS -->
+       <div class="row section-3">
+           <div id="img-3" class="col-lg-6">
+
+           </div>
+
+           <div id="txt-3"  class="col-lg-6">
+
+           </div>
+       </div>
+
+       <!-- CONTACT -->
+       <div class="row section-3">
+           <div id="img-3" class="col-lg-6">
+
+           </div>
+
+           <div id="txt-3"  class="col-lg-6">
+
+           </div>
+       </div>
+
+   </main>
+
+
+
+{% endblock %}

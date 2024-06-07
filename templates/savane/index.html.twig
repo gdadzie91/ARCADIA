@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SavaneController!{% endblock %}
+{% block stylesheets %}
+    <link href="{{ asset('css/savane.css') }}" rel="stylesheet">
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+
+{% block body %}
+
+    {% include 'menu_main/index.html.twig' %}
+
+
+    <!-- Presentation Section with Video Background -->
+    <section class="video-banner">
+        <video autoplay muted loop>
+            <source src="{{ asset('videos/savane.mp4') }}" type="video/mp4">
+            Votre navigateur ne supporte pas les vidéos HTML5.
+        </video>
+        <div class="content">
+            <div>
+                <h1 class="text-warning">Bienvenue à la Savane</h1>
+                <p>Explorez la vie sauvage africaine</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">La Savane</h2>
+                <p class="lead">L'habitat savane du zoo Arcadia reconstitue fidèlement les vastes plaines africaines, abritant des éléphants, girafes, lions et zèbres dans un cadre naturel. C'est une expérience immersive qui vous transporte au cœur de l'Afrique.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="{{ asset('images/jpg/savane.jpg') }}" class="img-fluid rounded shadow" alt="Savane">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="container my-5">
+        <h2 class="text-center">Galerie d'Images</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="{{ asset('images/jpg/elephant.jpg') }}" class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Éléphant">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="{{ asset('images/jpg/giraffe.jpg') }}" class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Girafe">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="{{ asset('images/jpg/lion.jpg') }}" class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Lion">
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" class="img-fluid" id="modalImage" alt="Modal Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Information Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="section-title">Informations supplémentaires</h2>
+                <p>Découvrez les habitudes alimentaires des animaux, leur comportement, et bien plus encore grâce à nos visites guidées. Nos guides experts vous fourniront des informations fascinantes sur chaque espèce.</p>
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-title">Localisation</h2>
+                <div id="map" class="rounded shadow" style="width: 100%; height: 300px;"></div>
+            </div>
+        </div>
+    </section>
+    <script src="{{ asset('js/savane.js') }}"></script>
+
+
+    {% include 'footer/index.html.twig' %}
+{% endblock %}

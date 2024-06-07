@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HabitatsController!{% endblock %}
+
+{% block body %}
+
+
+    <div class="container-fluid section-featurettes">
+        <!-- Featurette 1 -->
+        <div class="row featurette text-light w-75 mx-auto p-5">
+            <h2 class="text-light text-center mt-5">En ce moment, découvrez des aninaux extraordinaires!</h2>
+            <p class="text-center mb-5">Joignez-vous à nous pour une aventure inoubliable au Zoo Arcadia !</p>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">La Savane</h2>
+                <p class="lead">L'habitat savane du zoo Arcadia reconstitue fidèlement les vastes plaines africaines, abritant des éléphants, girafes, lions et zèbres dans un cadre naturel.</p>
+                <p><a class="btn btn-warning" href="#">Découvrir &raquo;</a></p>
+            </div>
+            <div class="col-md-5">
+                <img src="{{ asset('images/jpg/savane.jpg') }}" class="featurette-image img-fluid mx-auto img-box shadow" role="img"/>
+            </div>
+        </div>
+
+        <!-- Featurette 2 -->
+        <div class="row featurette w-75 p-5 mx-auto">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading text-md-end">Welcome to the jungle</h2>
+                <p class="lead text-light text-md-end">Dans l'habitat "Marais" du Zoo Arcadia, observez les alligators glissant silencieusement à travers les eaux stagnantes et les hérons élégants patrouillant les berges.</p>
+                <p class="text-md-end"><a class="btn btn-warning" href="#">Découvrir &raquo;</a></p>
+            </div>
+            <div class="col-md-5">
+                <img src="{{ asset('images/jpg/singe.jpg') }}" class="featurette-image img-fluid mx-auto img-box shadow" role="img"/>
+            </div>
+        </div>
+
+        <!-- Featurette 3 -->
+        <div class="row featurette w-75 p-5 mx-auto">
+            <div class="col-md-7">
+                <h2 class="featurette-heading text-light">The marrais</h2>
+                <p class="lead text-light">Dans l'habitat "Marais" du Zoo Arcadia, observez les alligators glissant silencieusement à travers les eaux stagnantes et les hérons élégants patrouillant les berges.</p>
+                <p><a class="btn btn-warning" href="#">Découvrir &raquo;</a></p>
+            </div>
+            <div class="col-md-5">
+                <img src="{{ asset('images/jpg/marais.jpg') }}" class="featurette-image img-fluid mx-auto img-box sca shadow" role="img"/>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
